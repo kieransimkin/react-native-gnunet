@@ -28,7 +28,7 @@
   ],
   "scripts": {
     "test": "jest",
-    "typecheck": "tsc",
+    "typecheck": "tsc -t esnext --types --pretty -d -p tsconfig.json",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "prepack": "bob build",
     "release": "release-it",
@@ -156,7 +156,7 @@
         "typescript",
         {
           "project": "tsconfig.build.json",
-          "tsc":"node_modules/typescript/bin/tsc --declaration"
+          "tsc":"node_modules/typescript/bin/tsc -t esnext --types --pretty -d -p tsconfig.json"
         }
       ]
     ]

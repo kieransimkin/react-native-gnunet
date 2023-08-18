@@ -8,7 +8,7 @@ pre-commit:
     types:
       files: git diff --name-only @{push}
       glob: "*.{js,ts, jsx, tsx}"
-      run: npx tsc --declaration
+      run: npx -t esnext --types --pretty -d -p tsconfig.json
 commit-msg:
   parallel: true
   commands:
