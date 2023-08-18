@@ -156,7 +156,7 @@
         "typescript",
         {
           "project": "tsconfig.build.json",
-          "tsc":"node_modules/typescript/bin/tsc -t esnext --types --pretty -d -p tsconfig.json"
+          "tsc":"node_modules/typescript/bin/tsc"
         }
       ]
     ]
